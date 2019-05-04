@@ -1,7 +1,7 @@
 Knowledge Bases Development Service (KBDS)
 ============================
 
-KBDS is based on [Yii 2](http://www.yiiframework.com/) Basic Project Template.
+KBDS is based on [Yii 2](http://www.yiiframework.com/) framework.
 
 [![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-basic/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-basic/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
@@ -27,7 +27,7 @@ DIRECTORY STRUCTURE
 REQUIREMENTS
 ------------
 
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
+The minimum requirement by this project template that your Web server supports PHP 7.x.
 
 
 INSTALLATION
@@ -35,13 +35,7 @@ INSTALLATION
 
 ### Download
 
-Extract the archive file downloaded from [bitbucket.org](https://github.com/LedZeppe1in/kbds/archive/master.zip) this directory.
-
-You can then access the application through the following URL:
-
-~~~
-http://localhost/
-~~~
+Extract the archive file downloaded from [github.com](https://github.com/LedZeppe1in/kbds/archive/master.zip) this directory.
 
 
 CONFIGURATION
