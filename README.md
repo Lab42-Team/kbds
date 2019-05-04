@@ -20,10 +20,8 @@ DIRECTORY STRUCTURE
       migrations/         contains migrations definition (tables)
       modules/            contains structured MVC-components for the Web application
       tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages (yii2 framework)
       views/              contains main view file for the Web application
       web/                contains the entry script and Web resources
-
 
 
 REQUIREMENTS
@@ -37,7 +35,7 @@ INSTALLATION
 
 ### Download
 
-Extract the archive file downloaded from [bitbucket.org](https://bitbucket.org/Led_Zeppelin/kbds/downloads) this directory.
+Extract the archive file downloaded from [bitbucket.org](https://github.com/LedZeppe1in/kbds/archive/master.zip) this directory.
 
 You can then access the application through the following URL:
 
