@@ -1,0 +1,262 @@
+/* Стили редактора метамодели и модели трансформации (элементы JsPlumb) */
+.tree-view-wrapper {
+    border-radius: 8px;
+    border: 1px double #2e6f9a;
+}
+
+.tree-header {
+    padding: 8px;
+}
+
+#metamodel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    border: 1px double #2e6f9a;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#transformation-model {
+    position: relative;
+    border-radius: 8px;
+    border: 1px double #2e6f9a;
+    overflow: auto;
+}
+
+#metaclasses-tree {
+    margin-left: -15px;
+}
+
+.checkbox-title {
+    font-weight: bold;
+    margin-left: -5px;
+}
+
+.checkbox-text {
+    font-weight: normal;
+    word-wrap: break-word;
+}
+
+.concept {
+    position: absolute;
+    padding: 3px 3px 3px 3px;
+    z-index: 4;
+    border: 1px solid #2e6f9a;
+    box-shadow: 2px 2px 19px #e0e0e0;
+    -o-box-shadow: 2px 2px 19px #e0e0e0;
+    -webkit-box-shadow: 2px 2px 19px #e0e0e0;
+    -moz-box-shadow: 2px 2px 19px #e0e0e0;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    cursor: move;
+    background-color: #ffffff;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+    display: block;
+}
+
+.concept:hover {
+    background-color: #5c96bc;
+    color: #ffffff;
+}
+
+#metamodel.initial .concept {
+    position: relative;
+    float: left;
+    margin: 60px;
+}
+
+.attribute {
+    color: #723D61;
+    border-top: 1px solid #2e6f9a;
+    background-color: #ddddff;
+    margin: 0 -3px -3px;
+    padding: 2px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+}
+
+.source-class, .target-class {
+    padding: 0 10px;
+}
+
+.source-attribute, .target-attribute {
+    padding: 0 10px;
+    margin: 0 -10px 0;
+}
+
+.concept:hover .attribute {
+    background-color: #5c96bc;
+    color: #ffffff;
+}
+
+.aLabel {
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border: 1px solid #346789;
+    cursor: pointer;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+}
+
+.aLabel.jsplumb-hover, .jsplumb-source-hover, .jsplumb-target-hover {
+    background-color: #1e8151;
+    color: #ffffff;
+}
+
+.jsplumb-source-hover .attribute {
+    background-color: #1e8151;
+    color: #ffffff;
+}
+
+.jsplumb-target-hover .attribute {
+    background-color: #1e8151;
+    color: #ffffff;
+}
+
+.jsplumb-endpoint {
+    z-index: 999;
+}
+
+.join {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    margin-top: 2px;
+    width: 1em;
+    height: 1em;
+    background-color: #ffa500;
+    cursor: pointer;
+    box-shadow: 0 0 2px #000000;
+    -webkit-transition: -webkit-box-shadow 0.25s ease-in;
+    -moz-transition: -moz-box-shadow 0.25s ease-in;
+    transition: box-shadow 0.25s ease-in;
+}
+
+.join:hover {
+    box-shadow: 0 0 6px #000000;
+}
+
+.dragHover {
+    border: 2px dotted #ffa500;
+}
+
+path {
+    cursor: pointer;
+}
+
+/* Стили для формы настройки отображения элементов JsPlumb */
+
+.setting-button {
+    margin-left: 40px;
+}
+
+#display-setting {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    border: 1px double #2e6f9a;
+    overflow: auto;
+    margin-top: 1px;
+    display: none;
+}
+
+.setting-checkbox {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Стили для контекстного меню элементов */
+
+#conceptual-model-context-menu-id {
+    padding: 5px;
+}
+
+#conceptual-model-context-menu-id, #concept-context-menu-id, #attribute-context-menu-id {
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    border: 1px solid #cccccc;
+    z-index: 1000;
+    min-width: 160px;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+#conceptual-model-context-menu-id:hover {
+    background-color: #5c96bc;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.context-menu-item {
+    padding: 3px 5px 3px 5px;
+    margin: 5px 0;
+}
+
+.context-menu-item:hover  {
+    background-color: #5c96bc;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Стили для модальных форм */
+
+#addConceptModalForm, #editConceptModalForm, #addAttributeModalForm,
+#editAttributeModalForm, #addConnectionModalForm, #editConnectionModalForm {
+    position: fixed;
+    left: 50%;
+    width: 800px;
+    padding: 10px 20px 0 20px;
+    margin-left: -400px;
+}
+
+#removeConceptModalForm, #removeAttributeModalForm, #removeConnectionModalForm, #messageModalForm {
+    position: fixed;
+    left: 50%;
+    width: 400px;
+    padding: 10px 20px 0 20px;
+    margin-left: -200px;
+}
+
+/* Media-запросы */
+@media (max-width: 990px) {
+    #metaclasses-tree {
+        margin-right: -15px;
+    }
+}

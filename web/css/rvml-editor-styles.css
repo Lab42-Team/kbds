@@ -1,0 +1,261 @@
+/* Стили RVML редактора (элементы JsPlumb) */
+.wrap {
+    height: 100% !important;
+}
+
+.container {
+    width: 100% !important;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+.rvml-editor {
+    height: 100%;
+    margin: 0 auto -56px;
+    padding: 0 0 56px;
+}
+
+#production-model {
+    height: 100%;
+    padding: 0;
+    border-top: 1px double #800000;
+    border-bottom: 1px double #800000;
+}
+
+#production-tree-view {
+    height: 100%;
+    padding: 0;
+    border-top: 1px double #800000;
+    border-bottom: 1px double #800000;
+    border-right: 1px double #800000;
+}
+
+#button-panel {
+    height: 33px;
+    padding: 5px;
+    background-color: #e7e7e7;
+    border-bottom: 1px double #999999;
+    text-align: right;
+}
+
+#tree-view {
+    height: 100%;
+}
+
+#tree-view > div {
+    height: 100%;
+}
+
+.tree-view-wrapper {
+    height: 100%;
+}
+
+.tree-header {
+    height: 47px;
+    border-bottom: 1px double #999999;
+    padding-top: 6px;
+}
+
+.tree-view-wrapper .row .col-sm-12 {
+    padding: 0;
+}
+
+.tree-body {
+    height: calc(100% - 80px);
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.tooltip {
+    position: fixed !important;
+}
+
+.fact-template, .rule-template, .rule-template-condition, .rule-template-action,
+.fact, .rule, .rule-condition, .rule-action, .operator {
+    position: absolute;
+    padding-left: 3px;
+    padding-right: 3px;
+    z-index: 4;
+    color: #000000;
+    border: 6px double #800000;
+    box-shadow: 2px 2px 19px #e0e0e0;
+    -o-box-shadow: 2px 2px 19px #e0e0e0;
+    -webkit-box-shadow: 2px 2px 19px #e0e0e0;
+    -moz-box-shadow: 2px 2px 19px #e0e0e0;
+    -moz-border-radius: 2px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    cursor: move;
+    background-color: #faf4b8;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+    display: block;
+}
+
+.rule-template, .rule {
+    border: 2px solid #800000;
+    display: table;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 300px;
+    table-layout: fixed;
+}
+
+.fact, .rule-action {
+    border: 2px solid #800000;
+}
+
+.operator {
+    border: 2px solid #800000;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.fact-template:hover, .rule-template:hover, .rule-template-condition:hover, .rule-template-action:hover,
+.fact:hover, .rule:hover, .rule-condition:hover, .rule-action:hover, .operator:hover {
+    background-color: #428bca;
+    color: #ffffff;
+}
+
+.rule-condition {
+    border: 2px dashed #800000;
+}
+
+.fact-template-slot, .fact-slot {
+    color: #000000;
+    margin-left: -3px;
+    margin-right: -3px;
+    padding: 2px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+}
+
+.first-slot {
+    margin-top: 3px;
+    border-top: 2px solid #800000;
+}
+
+.rule-condition .first-slot {
+    border-top: 2px dashed #800000;
+}
+
+.rule-template-text, .rule-text {
+    display: table-cell;
+    padding-left: 6px;
+    padding-right: 6px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rule-template-block, .rule-block {
+    display: table-cell;
+    width: 26px;
+    height: 50px;
+}
+
+.rule-template-cf, .rule-template-salience, .rule-cf, .rule-salience {
+    border-left: 2px solid #800000;
+    height: 25px;
+    padding-top: 2px;
+}
+
+.rule-template-cf, .rule-cf {
+    border-bottom: 2px solid #800000;
+}
+
+.fact-cf, .rule-condition-cf, .rule-action-cf {
+    position: relative;
+    float: right;
+    min-width: 25px;
+    height: 25px;
+    padding-left: 3px;
+    margin-left: 3px;
+    border-left: 2px solid #800000;
+}
+
+.rule-condition-cf {
+    border-left: 2px dashed #800000;
+}
+
+.fact-template:hover .fact-template-slot, .rule-template-condition:hover .fact-template-slot,
+.rule-template-action:hover .fact-template-slot,
+.fact:hover .fact-slot, .rule-condition:hover .fact-slot, .rule-action:hover .fact-slot {
+    background-color: #428bca;
+    color: #ffffff;
+}
+
+.production-join {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    margin-top: 2px;
+    width: 1em;
+    height: 1em;
+    background-color: #800000;
+    cursor: pointer;
+    box-shadow: 0 0 2px #000000;
+    -webkit-transition: -webkit-box-shadow 0.25s ease-in;
+    -moz-transition: -moz-box-shadow 0.25s ease-in;
+    transition: box-shadow 0.25s ease-in;
+}
+
+.production-join:hover {
+    box-shadow: 0 0 6px #000000;
+}
+
+#production-model.dragHover {
+    border: 2px dotted #800000;
+}
+
+.noneLabel, .assertLabel, .retractLabel, .modifyLabel, .duplicateLabel {
+    background-color: #ffffff;
+    padding: 1px 7px;
+    border: 1px solid #ff0000;
+    cursor: pointer;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+    border-radius: 50%;
+}
+
+.retractLabel {
+    padding: 1px 9px;
+}
+
+.aLabelSlot.jsplumb-hover, .jsplumb-source-hover, .jsplumb-target-hover,
+.jsplumb-source-hover .fact-template-slot, .jsplumb-target-hover .fact-template-slot,
+.jsplumb-source-hover .fact-slot, .jsplumb-target-hover .fact-slot {
+    background-color: #428bca;
+    color: #ffffff;
+}
+
+.jsplumb-endpoint {
+    z-index: 999;
+}
+
+path {
+    cursor: pointer;
+}
+
+ul.related-elements {
+    list-style: disc;
+}

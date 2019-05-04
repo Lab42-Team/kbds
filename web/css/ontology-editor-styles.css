@@ -1,0 +1,127 @@
+#ontology-model {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    border: 1px double #2e6f9a;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.concept {
+    position: absolute;
+    padding: 3px 3px 3px 3px;
+    z-index: 4;
+    border: 1px solid #2e6f9a;
+    box-shadow: 2px 2px 19px #e0e0e0;
+    -o-box-shadow: 2px 2px 19px #e0e0e0;
+    -webkit-box-shadow: 2px 2px 19px #e0e0e0;
+    -moz-box-shadow: 2px 2px 19px #e0e0e0;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    cursor: move;
+    background-color: #ffffff;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+    display: block;
+}
+
+.concept:hover {
+    background-color: #5c96bc;
+    color: #ffffff;
+}
+
+#ontology-model.initial .concept {
+    position: relative;
+    float: left;
+    margin: 60px;
+}
+
+.attribute {
+    color: #723D61;
+    border-top: 1px solid #2e6f9a;
+    background-color: #ddddff;
+    margin: 0 -3px -3px;
+    padding: 2px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+}
+
+.concept:hover .attribute {
+    background-color: #5c96bc;
+    color: #ffffff;
+}
+
+.aLabel {
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border: 1px solid #346789;
+    cursor: pointer;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+}
+
+.aLabel.jsplumb-hover, .jsplumb-source-hover, .jsplumb-target-hover {
+    background-color: #1e8151;
+    color: #ffffff;
+}
+
+.jsplumb-source-hover .attribute {
+    background-color: #1e8151;
+    color: #ffffff;
+}
+
+.jsplumb-target-hover .attribute {
+    background-color: #1e8151;
+    color: #ffffff;
+}
+
+.jsplumb-endpoint {
+    z-index: 999;
+}
+
+.join {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    margin-top: 2px;
+    width: 1em;
+    height: 1em;
+    background-color: #ffa500;
+    cursor: pointer;
+    box-shadow: 0 0 2px #000000;
+    -webkit-transition: -webkit-box-shadow 0.25s ease-in;
+    -moz-transition: -moz-box-shadow 0.25s ease-in;
+    transition: box-shadow 0.25s ease-in;
+}
+
+.join:hover {
+    box-shadow: 0 0 6px #000000;
+}
+
+.dragHover {
+    border: 2px dotted #ffa500;
+}
+
+path {
+    cursor: pointer;
+}
