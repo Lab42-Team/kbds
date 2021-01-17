@@ -3,15 +3,15 @@
 namespace app\components;
 
 use Yii;
-use app\modules\knowledge_base\models\DataType;
-use app\modules\knowledge_base\models\FactTemplate;
-use app\modules\knowledge_base\models\FactTemplateSlot;
-use app\modules\knowledge_base\models\RuleTemplate;
-use app\modules\knowledge_base\models\Fact;
-use app\modules\knowledge_base\models\FactSlot;
 use app\modules\knowledge_base\models\Rule;
-use app\modules\knowledge_base\models\RuleCondition;
+use app\modules\knowledge_base\models\Fact;
+use app\modules\knowledge_base\models\DataType;
+use app\modules\knowledge_base\models\FactSlot;
 use app\modules\knowledge_base\models\RuleAction;
+use app\modules\knowledge_base\models\RuleTemplate;
+use app\modules\knowledge_base\models\FactTemplate;
+use app\modules\knowledge_base\models\RuleCondition;
+use app\modules\knowledge_base\models\FactTemplateSlot;
 
 /**
  * CLIPSCodeGenerator.
