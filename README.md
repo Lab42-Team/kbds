@@ -1,7 +1,9 @@
-Knowledge Bases Development Service (KBDS)
+Knowledge Bases Development System
 ============================
 
-KBDS is based on [Yii 2](http://www.yiiframework.com/) framework.
+<b>The Knowledge Bases Development System (KBDS)</b> is a web-oriented platform for prototyping rule-based knowledge bases by using different conceptual models (e.g., UML, concept maps).
+
+KBDS is based on the [PHP 7](https://www.php.net/releases/7_0_0.php) and the [Yii 2 Framework](http://www.yiiframework.com/).
 
 [![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-basic/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-basic/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
@@ -27,7 +29,7 @@ DIRECTORY STRUCTURE
 REQUIREMENTS
 ------------
 
-The minimum requirement by this project template that your Web server supports PHP 7.x.
+The minimum requirement by this project that your Web server supports <b>PHP 7.0</b>, <b>jsPlumb 2.12</b>, <b>PostgreSQL 9.0</b>.
 
 
 INSTALLATION
@@ -48,13 +50,20 @@ Edit the file `config/db.php` with real data, for example:
 ```php
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
+    'dsn' => 'pgsql:host=localhost;port=5432;dbname=kbds;',
+    'username' => 'postgres',
+    'password' => 'root',
     'charset' => 'utf8',
+    'tablePrefix' => 'kbds_',
+    'schemaMap' => [
+        'pgsql'=> [
+            'class'=>'yii\db\pgsql\Schema',
+            'defaultSchema' => 'public'
+        ]
+    ],
 ];
 ```
 
 ### Other
 
-Also check and edit the other files in the `config/` directory to customize your application.
+Also, check and edit the other files in the `config/` directory to customize your application.
