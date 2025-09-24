@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m160429_101812_data_type_table extends Migration
+class m160429_100512_data_type_table extends Migration
 {
     public function up()
     {
